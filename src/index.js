@@ -28,7 +28,7 @@ app.use(express.json());
 
 /* --------------------------------- routes --------------------------------- */
 app.get('/', (req, res) => {
-    res.json({"message": "hola mundo"})
+    res.render('index')
 });
 /* ------------------------------ public files ------------------------------ */ 
 app.use(express.static(join(__dirname, 'public')))
