@@ -1,4 +1,4 @@
-CREATE  DATABAS practica01; 
+CREATE  TABLE practica01; 
 
 USE practica01;   
 
@@ -11,4 +11,8 @@ age INT
 
 
 ); 
-SELECT * FROM personas; 
+SELECT * FROM personas;  
+
+CREATE USER 'practica01'@'localhost' IDENTIFIED BY 'practica01'; 
+GRANT ALL PRIVILEGES ON practica01. * TO 'practica'@'localhost'; 
+GRANT ALL PRIVILEGES ON *.* TO 'practica01'@'localhost';  
